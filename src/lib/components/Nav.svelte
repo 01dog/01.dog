@@ -5,7 +5,7 @@
     <div class="flex-1 px-2 mx-2">
         <div class="text-base-content items-stretch hidden lg:flex">
             <a href="/" class="btn btn-ghost btn-sm rounded-btn">home</a>
-            <a href="/blog" class="btn btn-ghost btn-sm rounded-btn">blog</a>
+            <!-- <a href="/blog" class="btn btn-ghost btn-sm rounded-btn">blog</a> -->
         </div>
     </div>
 </div>
