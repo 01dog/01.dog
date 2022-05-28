@@ -28,6 +28,6 @@
 	<Hero {author} />
 </div>
 
-<div class="grid justify-center mb-6">
+<div class="grid justify-center">
 	<Socials />
 </div>

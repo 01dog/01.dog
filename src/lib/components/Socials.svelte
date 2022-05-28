@@ -17,7 +17,7 @@
 </script>
 
 <grid class="grid grid-cols-4 gap-4 max-w-2xl place-items-center">
-	<div class="col-span-4 text-4xl font-bold text-center mt-4">find me here:</div>
+	<div class="col-span-4 text-4xl font-bold text-center mt-4 mb-2">find me here:</div>
 	<div class="tooltip" data-tip={dataTip} value="1dog#0001">
 		<CopyToClipboard text={discordTag} on:copy={handleCopied} on:fail={handleFailedCopy} let:copy>
 			<button on:click={copy} class="btn gap-2 btn-clip">
