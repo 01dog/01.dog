@@ -77,10 +77,10 @@
 		i can also be found a few other places:
 	</div>
 	<div class="col-span-2 text-center text-xl">
-		<a class="link link-primary link-hover" href="https://rateyourmusic.com/~1dog">rateyourmusic</a>
+		<a class="link link-primary link-hover" href="https://rateyourmusic.com/~1dog" target="noopener">rateyourmusic</a>
 	</div>
 	<div class="col-span-2 text-center text-xl">
-		<a class="link link-primary link-hover" href="https://www.inaturalist.org/people/un_caine"
+		<a class="link link-primary link-hover" href="https://www.inaturalist.org/people/un_caine" target="noopener"
 			>inaturalist</a
 		>
 	</div>
