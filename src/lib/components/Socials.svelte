@@ -1,7 +1,7 @@
 <!--this can definitely all be done in a cleaner way, especially the buttons-->
 <script>
 	import LinkedButton from '$lib/components/LinkedButton.svelte';
-
+	import Link from '$lib/components/Link.svelte';
 	import CopyToClipboard from 'svelte-copy-to-clipboard';
 
 	let discordTag = '1dog#0001';
@@ -77,11 +77,9 @@
 		i can also be found a few other places:
 	</div>
 	<div class="col-span-2 text-center text-xl">
-		<a class="link link-primary link-hover" href="https://rateyourmusic.com/~1dog" target="noopener">rateyourmusic</a>
+		<Link href="https://rateyourmusic.com/~1dog">rateyourmusic</Link>
 	</div>
 	<div class="col-span-2 text-center text-xl">
-		<a class="link link-primary link-hover" href="https://www.inaturalist.org/people/un_caine" target="noopener"
-			>inaturalist</a
-		>
+		<Link href="https://www.inaturalist.org/people/un_caine">inaturalist</Link>
 	</div>
 </grid>
