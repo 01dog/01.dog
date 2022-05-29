@@ -6,7 +6,7 @@
 
 <Nav />
 
-<div class="container max-w-3x1 mx-auto px-4 sm:px-6 lg:px-8">
+<div class="container max-w-3x1 mx-auto px-4 sm:px-6 lg:px-8 mb-10">
 	<slot />
 </div>
 
