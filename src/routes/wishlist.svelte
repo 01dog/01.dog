@@ -128,7 +128,7 @@
 	</table>
 
 	<!--this wont line up with the kitchen table but w/e, i dont care-->
-	<h2 class="text-2xl font-bold text-center mb-2">clothes</h2>
+	<h2 class="text-2xl font-bold text-center mb-2">clothes/other</h2>
 	<table class="table table-zebra w-full text-center">
 		<thead>
 			<tr>
@@ -149,6 +149,22 @@
 					>
 				</td>
 				<td class="text-accent">$22-24</td>
+			</tr>
+			<tr>
+				<td>13</td>
+				<td>meundies crew socks (slightly cheaper alternative to darn tough)</td>
+				<td><Link href="https://www.meundies.com/t/men/socks/crew">meundies.com</Link></td>
+				<td class="text-accent">$14-$18</td>
+			</tr>
+			<tr>
+				<td><mark>14</mark></td>
+				<td>books! pretty much anything off of my wishlist, no particular preference</td>
+				<td>
+					<Link href="https://bookshop.org/wishlists/08b09d9d43c839d635d83dc7f32b51b632168fa0"
+						>bookshop.org</Link
+					>
+				</td>
+				<td class="text-accent">$15-$50</td>
 			</tr>
 		</tbody>
 	</table>
