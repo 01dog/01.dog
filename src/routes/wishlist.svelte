@@ -22,7 +22,7 @@
 				<td
 					><Link
 						href="https://bookshop.org/books/the-food-lab-better-home-cooking-through-science-9781494539870/9780393081084"
-						>bookshop.org (or Amazon)</Link
+						>bookshop.org (or amazon)</Link
 					></td
 				>
 				<td class="text-accent">$45.95</td>
@@ -74,7 +74,8 @@
 				<td
 					><Link
 						href="https://www.amazon.com/stores/DIORO/page/C8464684-8784-4B9A-8BC8-60EF90B59B71?ref_=ast_bln"
-					/></td
+						>amazon</Link
+					></td
 				>
 				<td class="text-accent">~$20-$60</td>
 			</tr>
