@@ -88,7 +88,7 @@
 						>bernalcutlery.com</Link
 					></td
 				>
-				<td class="text-accent">$16-21.50 ea.</td>
+				<td class="text-accent">$16-$21.50 ea.</td>
 			</tr>
 			<tr>
 				<td><mark>8</mark></td>
