@@ -6,9 +6,6 @@
 	import { client } from '$lib/utils/graphQLClient';
 
 	export const load = async () => {
-		console.log('-----------getAboutMe-----------');
-		console.log(getAboutMe);
-		console.log('--------------------------------');
 		const { author } = await client.request(getAboutMe);
 		return {
 			props: {
@@ -21,9 +18,6 @@
 <!--this feels incorrect somehow-->
 <script>
 	export let author;
-	console.log('-----------author-----------');
-	console.log(author);
-	console.log('----------------------------');
 </script>
 
 <svelte:head>

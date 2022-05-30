@@ -4,4 +4,4 @@ built with:
 - tailwindcss
   - & daisyui
 - graphcms
-- netlify
+- vercel

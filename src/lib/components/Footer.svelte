@@ -12,10 +12,8 @@
 				class="link link-hover link-accent"
 				target="noopener noreferrer">tailwind</a
 			>. hosted on
-			<a
-				href="https://www.netlify.com/"
-				class="link link-hover link-accent"
-				target="noopener noreferrer">netlify</a
+			<a href="https://vercel.com" class="link link-hover link-accent" target="noopener noreferrer"
+				>vercel</a
 			>.
 		</p>
 	</div>
