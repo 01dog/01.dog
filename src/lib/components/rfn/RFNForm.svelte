@@ -1,1 +1,45 @@
-RFN input form here
+<script context="module">
+	import RFNTextInput from './RFNTextInput.svelte';
+</script>
+
+<script>
+	function onSubmit(e) {
+		const formData = new FormData(e.target);
+
+		const data = {};
+		for (let field of formData) {
+			const [k, v] = field;
+			data[k] = v;
+		}
+		console.log(data);
+	}
+</script>
+
+<h2 class="text-2xl font-bold mt-3">transaction info</h2>
+
+<form class="form-control" on:submit|preventDefault={onSubmit}>
+	<div class="grid grid-cols-3 p-4 gap-4">
+		<div>
+			<RFNTextInput placeholder="store number" id="storenum" name="storenum" />
+		</div>
+		<div>
+			<RFNTextInput placeholder="terminal number" id="termnum" name="termnum" />
+		</div>
+		<div>
+			<RFNTextInput placeholder="transaction ID" id="transid" name="transid" />
+		</div>
+		<div>
+			<RFNTextInput placeholder="YY" id="year" name="year" />
+		</div>
+		<div>
+			<RFNTextInput placeholder="MM" id="month" name="month" />
+		</div>
+		<div>
+			<RFNTextInput placeholder="DD" id="day" name="id" />
+		</div>
+		<div class="col-start-2 col-end-3">
+			<RFNTextInput placeholder="secret number" id="secret" name="secret" />
+		</div>
+	</div>
+	<button type="submit" class="btn btn-primary mb-3">get RFN</button>
+</form>
