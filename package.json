@@ -2,7 +2,7 @@
 	"name": "graphcms-starter-blog",
 	"version": "0.0.1",
 	"scripts": {
-		"dev": "svelte-kit dev",
+		"dev": "vite dev",
 		"build": "svelte-kit build",
 		"package": "svelte-kit package",
 		"preview": "svelte-kit preview",
@@ -31,7 +31,8 @@
 		"svelte": "^3.44.0",
 		"svelte-copy-to-clipboard": "^0.2.5",
 		"svelte-preprocess": "^4.10.5",
-		"tailwindcss": "^3.0.23"
+		"tailwindcss": "^3.0.23",
+		"vite": "^3.0.4"
 	},
 	"type": "module",
 	"dependencies": {
