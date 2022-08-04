@@ -9,6 +9,11 @@
 		const data = {};
 		for (let field of formData) {
 			const [k, v] = field;
+			let isnum = /^\d*$/.test(v);
+			if (!isnum) {
+				alert('numbers only!');
+				break;
+			}
 			data[k] = v;
 		}
 		console.log(data);
