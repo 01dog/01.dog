@@ -1,6 +1,6 @@
 {
-	"name": "graphcms-starter-blog",
-	"version": "0.0.1",
+	"name": "01dog",
+	"version": "2.0.0",
 	"scripts": {
 		"dev": "vite dev",
 		"build": "svelte-kit build",
