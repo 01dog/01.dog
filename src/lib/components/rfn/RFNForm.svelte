@@ -4,12 +4,18 @@
 </script>
 
 <script>
+	let disabled = false;
+	let RFN = '';
+
 	function onSubmit(e) {
+		disabled = true;
+
 		const formData = new FormData(e.target);
 
 		const data = {};
 		for (let field of formData) {
 			const [k, v] = field;
+			// check if input is numerical only
 			let isnum = /^\d*$/.test(v);
 			if (!isnum) {
 				alert('numbers only!');
@@ -18,8 +24,10 @@
 			data[k] = v;
 		}
 
+		// if we didnt break out of the loop, build the survey URL
 		if (Object.keys(data).length !== 0) {
-			buildSurveyURL(data);
+			RFN = buildSurveyURL(data);
+			console.log(RFN);
 		}
 	}
 </script>
@@ -27,7 +35,7 @@
 <h2 class="text-2xl font-bold mt-3">transaction info</h2>
 
 <!-- on:submit|preventDefault={onSubmit} -->
-<form class="form-control">
+<form class="form-control" on:submit|preventDefault={onSubmit} {disabled}>
 	<div class="grid grid-cols-3 p-4 gap-4">
 		<div>
 			<RFNTextInput placeholder="store number" id="storenum" name="storenum" />

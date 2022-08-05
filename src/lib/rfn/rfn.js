@@ -16,9 +16,10 @@ export function buildSurveyURL(data) {
     findRandomNum(survey, keyword)
 }
 
+let randomNum = 0;
 async function findRandomNum(surveyNum, keywordNum) {
     let baseURL = 'https://feedback.inmoment.com/websurvey/2/begin'
-    let randomNum = 0;
+    
     keywordNum = randomNum + keywordNum;
 
     let newURL = baseURL + '?gateway=WalgreensQR' + '&survey=' + surveyNum + '&keyword=' + keywordNum + "&timeofvisit=1200"
@@ -27,6 +28,8 @@ async function findRandomNum(surveyNum, keywordNum) {
 
     if (response.status === 303) {
         console.log("got the secret number! it is ", randomNum);
+
+        randomNum = 0;
         return surveyNum + randomNum + keywordNum;
     } else if (response.status === 404) {
         throw new AbortError(response.statusText);
