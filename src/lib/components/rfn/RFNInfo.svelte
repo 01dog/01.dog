@@ -21,7 +21,7 @@
 	<br />
 	for this tool to work, however, we need 2 more digits after the secret number. on the bottom of a receipt,
 	the survey number and password is just the RFN split into 2 sections: survey number and password. the
-	last 3 digits of the
+	survey number ends at the transaction ID. the last 4 digits of the
 	<b>password</b> section contain the entire secret number needed. this appears to stay static and never
 	change, but could be store specific.
 </p>

@@ -24,6 +24,7 @@
 		"graphql-request": "^4.2.0",
 		"marked": "^4.0.16",
 		"mdsvex": "^0.10.5",
+		"p-retry": "^5.1.1",
 		"postcss": "^8.4.12",
 		"postcss-load-config": "^3.1.4",
 		"prettier": "^2.5.1",
@@ -36,6 +37,7 @@
 	},
 	"type": "module",
 	"dependencies": {
+		"isomorphic-fetch": "^3.0.0",
 		"vercel": "^27.3.6"
 	}
 }

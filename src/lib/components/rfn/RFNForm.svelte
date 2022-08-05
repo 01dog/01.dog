@@ -1,5 +1,6 @@
 <script context="module">
 	import RFNTextInput from './RFNTextInput.svelte';
+	import { buildSurveyURL } from '$lib/rfn/rfn.js';
 </script>
 
 <script>
@@ -16,7 +17,10 @@
 			}
 			data[k] = v;
 		}
-		console.log(data);
+
+		if (Object.keys(data).length !== 0) {
+			buildSurveyURL(data);
+		}
 	}
 </script>
 
@@ -40,7 +44,7 @@
 			<RFNTextInput placeholder="MM" id="month" name="month" />
 		</div>
 		<div>
-			<RFNTextInput placeholder="DD" id="day" name="id" />
+			<RFNTextInput placeholder="DD" id="day" name="day" />
 		</div>
 		<div class="col-start-2 col-end-3">
 			<RFNTextInput placeholder="secret number" id="secret" name="secret" />
