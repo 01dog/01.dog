@@ -26,7 +26,8 @@
 
 <h2 class="text-2xl font-bold mt-3">transaction info</h2>
 
-<form class="form-control" on:submit|preventDefault={onSubmit}>
+<!-- on:submit|preventDefault={onSubmit} -->
+<form class="form-control">
 	<div class="grid grid-cols-3 p-4 gap-4">
 		<div>
 			<RFNTextInput placeholder="store number" id="storenum" name="storenum" />
