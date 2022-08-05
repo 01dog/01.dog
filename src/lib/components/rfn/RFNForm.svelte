@@ -1,6 +1,7 @@
 <script context="module">
 	import RFNTextInput from './RFNTextInput.svelte';
-	import { buildSurveyURL } from '$lib/rfn/rfn.js';
+	// import { buildSurveyURL } from '$lib/rfn/rfn.js';
+	import buildSurveyUrl from '$api/rfn.js';
 </script>
 
 <script>
