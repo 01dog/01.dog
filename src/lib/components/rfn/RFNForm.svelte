@@ -27,7 +27,9 @@
 
 		// if we didnt break out of the loop, build the survey URL
 		if (Object.keys(data).length !== 0) {
-			buildSurveyURL(data).then(alert);
+			buildSurveyURL(data).then(function (data) {
+				alert(data.replace(/(.{4})/g, '$&-'));
+			});
 		}
 	}
 </script>
