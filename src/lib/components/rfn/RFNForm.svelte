@@ -27,8 +27,7 @@
 
 		// if we didnt break out of the loop, build the survey URL
 		if (Object.keys(data).length !== 0) {
-			RFN = buildSurveyURL(data);
-			console.log(RFN);
+			buildSurveyURL(data).then(alert);
 		}
 	}
 </script>
