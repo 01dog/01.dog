@@ -1,6 +1,6 @@
 <script context="module">
 	import RFNTextInput from './RFNTextInput.svelte';
-	import buildSurveyURL from '$api/rfn.js';
+	// import buildSurveyURL from '$api/rfn.js';
 </script>
 
 <script>
@@ -32,7 +32,7 @@
 	}
 </script>
 
-<h2 class="text-2xl font-bold mt-3">transaction info</h2>
+<h2 class="text-2xl font-bold mt-4">transaction info</h2>
 
 <form class="form-control" on:submit|preventDefault={onSubmit} {disabled}>
 	<div class="grid grid-cols-3 p-4 gap-4">
@@ -58,5 +58,5 @@
 			<RFNTextInput placeholder="secret number" id="secret" name="secret" />
 		</div>
 	</div>
-	<button type="submit" class="btn btn-primary mb-3">get RFN</button>
+	<button type="submit" class="btn btn-primary mb-4">get RFN</button>
 </form>

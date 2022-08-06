@@ -1,4 +1,16 @@
-<h2 class="text-2xl font-bold mt-3">about RFNs</h2>
+<h2 class="text-2xl font-bold mt-4">how to use this tool</h2>
+<ul class="list-decimal px-8 py-4">
+	<li>
+		grab any receipt from a non-employee, take note of the last <b>4</b> digits in the survey password
+		at the bottom
+	</li>
+	<li>go to next gen -> transaction journal -> POS, and find the relevant transaction</li>
+	<li>
+		fill in the form with all the relevant information, including the secret number from the receipt
+	</li>
+	<li>wait a few seconds for the valid RFN for the transaction</li>
+</ul>
+<h2 class="text-2xl font-bold">about RFNs</h2>
 <p class="p-4">
 	RFNs are comprised of 8 sets of 4 numbers on the bottom of a receipt and are used for returns.
 	RFNs follow a standard format made up of info about the transaciton and are formatted as follows:
