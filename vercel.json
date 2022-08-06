@@ -1,0 +1,8 @@
+{
+	"headers": [
+		{
+			"source": "/api/rfn.js",
+			"headers": [{ "key": "Access-Control-Allow-Origin", "value": "*" }]
+		}
+	]
+}
