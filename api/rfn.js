@@ -1,4 +1,3 @@
-// import { AbortError } from 'p-retry';
 import fetch from 'isomorphic-fetch';
 
 export default async function buildSurveyURL(data) {

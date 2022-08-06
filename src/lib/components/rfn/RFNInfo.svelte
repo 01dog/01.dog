@@ -17,11 +17,11 @@
 	>
 	<br />
 	im not 100% sure how this will handle transaction IDs >9999. if they just roll over, nothing changes.
-	otherwise /shrug
+	otherwise, /shrug.
 	<br />
 	<br />
 	for this tool to work, however, we need 2 more digits after the secret number. on the bottom of a receipt,
-	the survey number and password is just the RFN split into 2 sections: survey number and password. the
-	survey number ends at the transaction ID. the last <b>4 digits of the password</b> section contain
-	the entire secret number needed. this appears to be static and never change, but could be store specific.
+	the RFN is split into 2 sections: survey number and password. the survey number ends at the transaction
+	ID. the last <b>4 digits of the password</b> section contain the entire secret number needed. this
+	appears to be static and never change, but could be store specific.
 </p>

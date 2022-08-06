@@ -1,12 +1,10 @@
 <script context="module">
 	import RFNTextInput from './RFNTextInput.svelte';
-	// import { buildSurveyURL } from '$lib/rfn/rfn.js';
 	import buildSurveyURL from '$api/rfn.js';
 </script>
 
 <script>
 	let disabled = false;
-	let RFN = '';
 
 	function onSubmit(e) {
 		disabled = true;
@@ -28,7 +26,7 @@
 		// if we didnt break out of the loop, build the survey URL
 		if (Object.keys(data).length !== 0) {
 			buildSurveyURL(data).then(function (data) {
-				alert(data.replace(/(.{4})/g, '$&-'));
+				alert(data.replace(/(.{4})/g, '$&-').slice(0, -3));
 			});
 		}
 	}
@@ -36,7 +34,6 @@
 
 <h2 class="text-2xl font-bold mt-3">transaction info</h2>
 
-<!-- on:submit|preventDefault={onSubmit} -->
 <form class="form-control" on:submit|preventDefault={onSubmit} {disabled}>
 	<div class="grid grid-cols-3 p-4 gap-4">
 		<div>
