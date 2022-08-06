@@ -1,4 +1,4 @@
-import pRetry, { AbortError } from 'p-retry';
+import { AbortError } from 'p-retry';
 import fetch from 'isomorphic-fetch';
 
 export default function buildSurveyURL(data) {
@@ -11,7 +11,7 @@ export default function buildSurveyURL(data) {
 }
 
 // probably a better way to do this
-let randomNum = 0;
+let randomNum = 1; // 0
 async function findRandomNum(surveyNum, keywordNum) {
     let baseURL = "https://shielded-beach-28637.herokuapp.com/https://feedback.inmoment.com/websurvey/2/begin";
         
@@ -31,5 +31,6 @@ async function findRandomNum(surveyNum, keywordNum) {
     }
     randomNum++
 
-    console.log(await pRetry(findRandomNum, {retries: 10}))
+    // console.log(await pRetry(findRandomNum, {retries: 10}))
+    console.log("did not get valid RFN")
 }
