@@ -2,14 +2,31 @@
 <ul class="list-decimal px-8 py-4">
 	<li>
 		grab any receipt from a non-employee, take note of the last <b>4</b> digits in the survey password
-		at the bottom
+		at the bottom (known secret numbers are in the table below)
 	</li>
-	<li>go to next gen -> transaction journal -> POS, and find the relevant transaction</li>
+	<li>go to next gen -> electronic journal -> POS, and find the relevant transaction</li>
 	<li>
 		fill in the form with all the relevant information, including the secret number from the receipt
 	</li>
 	<li>wait a few seconds for the valid RFN for the transaction</li>
 </ul>
+<div class="overflow-x-auto">
+	<table class="table w-full mb-4">
+		<!-- head -->
+		<thead>
+			<tr>
+				<th>store number</th>
+				<th>secret number</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>09204</td>
+				<td>0326</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
 <h2 class="text-2xl font-bold">about RFNs</h2>
 <p class="p-4">
 	RFNs are comprised of 8 sets of 4 numbers on the bottom of a receipt and are used for returns.
@@ -36,4 +53,5 @@
 	the RFN is split into 2 sections: survey number and password. the survey number ends at the transaction
 	ID. the last <b>4 digits of the password</b> section contain the entire secret number needed. this
 	appears to be static and never change, but could be store specific.
+	<br />
 </p>

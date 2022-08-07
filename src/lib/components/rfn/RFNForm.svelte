@@ -1,14 +1,14 @@
 <script context="module">
 	import RFNTextInput from './RFNTextInput.svelte';
-	import buildSurveyURL from '$api/rfn.js';
+	// import buildSurveyURL from '$api/rfn.js';
 </script>
 
 <script>
 	let disabled = false;
+	let loading = false;
+	let buttonText = 'get RFN';
 
-	function onSubmit(e) {
-		disabled = true;
-
+	async function getRFN(e) {
 		const formData = new FormData(e.target);
 
 		const data = {};
@@ -22,19 +22,30 @@
 			}
 			data[k] = v;
 		}
+		console.log(data);
 
 		// if we didnt break out of the loop, build the survey URL
 		if (Object.keys(data).length !== 0) {
 			buildSurveyURL(data).then(function (data) {
-				alert(data.replace(/(.{4})/g, '$&-').slice(0, -3));
+				return data.replace(/(.{4})/g, '$&-').slice(0, -3);
 			});
 		}
+	}
+
+	let promise;
+
+	function handleClick(e) {
+		disabled = true;
+		loading = true;
+		buttonText = 'getting RFN...';
+
+		promise = getRFN(e);
 	}
 </script>
 
 <h2 class="text-2xl font-bold mt-4">transaction info</h2>
 
-<form class="form-control" on:submit|preventDefault={onSubmit} {disabled}>
+<form class="form-control" on:submit|preventDefault={handleClick}>
 	<div class="grid grid-cols-3 p-4 gap-4">
 		<div>
 			<RFNTextInput placeholder="store number" id="storenum" name="storenum" />
@@ -58,5 +69,13 @@
 			<RFNTextInput placeholder="secret number" id="secret" name="secret" />
 		</div>
 	</div>
-	<button type="submit" class="btn btn-primary mb-4">get RFN</button>
+	<button type="submit" class="btn btn-primary {loading} mb-4" {disabled}>{buttonText}</button>
 </form>
+
+{#await promise}
+	<p>...waiting</p>
+{:then rfn}
+	<p>the rfn is {rfn}</p>
+{:catch error}
+	<p style="color: red">{error.message}</p>
+{/await}
