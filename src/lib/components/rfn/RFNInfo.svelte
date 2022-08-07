@@ -1,4 +1,5 @@
 <h2 class="text-2xl font-bold mt-4">how to use this tool</h2>
+<h1 class="font-bold">note: this tool is rate limited. please do not spam it!</h1>
 <ul class="list-decimal px-8 py-4">
 	<li>
 		grab any receipt from a non-employee, take note of the last <b>4</b> digits in the survey password

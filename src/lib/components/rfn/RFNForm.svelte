@@ -28,7 +28,6 @@
 			}
 			data[k] = v;
 		}
-		console.log(data);
 
 		// if we didnt break out of the loop, build the survey URL
 		if (Object.keys(data).length !== 0) {
@@ -40,7 +39,9 @@
 					alert(error.message);
 				});
 		}
+		console.log("we're after buildSurveyURL()");
 	}
+	console.log("we're outside the func");
 	disabled = false;
 	loading = false;
 	buttonText = 'get RFN';

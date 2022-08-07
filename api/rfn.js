@@ -9,7 +9,7 @@ export default async function buildSurveyURL(data) {
     rfnLen = survey + keyword + '1'
             // lazy check to make sure RFN has correct amount of numbers
             if (rfnLen.length !== 22) {
-                throw Error("invalid length", "expected input length 22, got: ", rfnLen.length)
+                throw Error("invalid input: expected input length 22, got: ", rfnLen.length)
             }
 
     for (let randomNum = 0; randomNum < 9; randomNum++) {
