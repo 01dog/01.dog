@@ -38,13 +38,9 @@
 				.catch((error) => {
 					alert(error.message);
 				});
+			console.log('after promise');
 		}
-		console.log("we're after buildSurveyURL()");
 	}
-	console.log("we're outside the func");
-	disabled = false;
-	loading = false;
-	buttonText = 'get RFN';
 </script>
 
 <h2 class="text-2xl font-bold mt-4">transaction info</h2>
