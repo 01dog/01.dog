@@ -7,8 +7,10 @@
 	let disabled = false;
 	let loading = false;
 	let buttonText = 'get RFN';
+	let RFN;
 
-	async function getRFN(e) {
+	// there is definitely a smarter way to do this using svelte's await blocks, but i just dont know how to yet
+	function getRFN(e) {
 		const formData = new FormData(e.target);
 
 		const data = {};
@@ -26,17 +28,16 @@
 
 		// if we didnt break out of the loop, build the survey URL
 		if (Object.keys(data).length !== 0) {
-			buildSurveyURL(data)
+			RFN = buildSurveyURL(data)
 				.then(function (data) {
 					return data.replace(/(.{4})/g, '$&-').slice(0, -3);
 				})
 				.catch((error) => {
 					return error.message;
 				});
-			disabled = false;
-			loading = false;
-			buttonText = 'get RFN';
 		}
+
+		console.log(RFN);
 	}
 
 	let promise;
