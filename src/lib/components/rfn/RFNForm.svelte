@@ -4,12 +4,10 @@
 </script>
 
 <script>
-	import RfnInfo from './RFNInfo.svelte';
-
 	let disabled = false;
 	let loading = false;
 	let buttonText = 'get RFN';
-	let RFN;
+	let RFN = '';
 
 	// there is definitely a smarter way to do this using svelte's await blocks, but i just dont know how to yet
 	function getRFN(e) {
@@ -39,7 +37,7 @@
 					return data.replace(/(.{4})/g, '$&-').slice(0, -3);
 				})
 				.catch((error) => {
-					return error.message;
+					alert(error.message);
 				});
 		}
 	}
