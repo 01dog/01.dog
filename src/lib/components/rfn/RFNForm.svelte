@@ -4,6 +4,8 @@
 </script>
 
 <script>
+	import RfnInfo from './RFNInfo.svelte';
+
 	let disabled = false;
 	let loading = false;
 	let buttonText = 'get RFN';
@@ -11,6 +13,10 @@
 
 	// there is definitely a smarter way to do this using svelte's await blocks, but i just dont know how to yet
 	function getRFN(e) {
+		disabled = true;
+		loading = true;
+		buttonText = 'getting RFN...';
+
 		const formData = new FormData(e.target);
 
 		const data = {};
@@ -36,24 +42,13 @@
 					return error.message;
 				});
 		}
-
-		console.log(RFN);
 	}
-
-	let promise;
-
-	function handleClick(e) {
-		disabled = true;
-		loading = true;
-		buttonText = 'getting RFN...';
-
-		promise = getRFN(e);
-	}
+	console.log(RFN);
 </script>
 
 <h2 class="text-2xl font-bold mt-4">transaction info</h2>
 
-<form class="form-control" on:submit|preventDefault={handleClick}>
+<form class="form-control" on:submit|preventDefault={getRFN}>
 	<div class="grid grid-cols-3 p-4 gap-4">
 		<div>
 			<RFNTextInput placeholder="store number" id="storenum" name="storenum" />
@@ -80,10 +75,8 @@
 	<button type="submit" class="btn btn-primary {loading} mb-4" {disabled}>{buttonText}</button>
 </form>
 
-{#await promise}
-	<p>...waiting</p>
-{:then rfn}
-	<p>the rfn is {rfn}</p>
-{:catch error}
-	<p style="color: red">{error.message}</p>
-{/await}
+{#if RFN.length !== 0}
+	<p>we have a valid rfn! {RFN}</p>
+{:else}
+	<p>nothing yet</p>
+{/if}
