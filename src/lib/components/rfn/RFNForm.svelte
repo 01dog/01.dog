@@ -32,14 +32,17 @@
 
 		// if we didnt break out of the loop, build the survey URL
 		if (Object.keys(data).length !== 0) {
-			RFN = buildSurveyURL(data)
+			buildSurveyURL(data)
 				.then(function (data) {
-					return data.replace(/(.{4})/g, '$&-').slice(0, -3);
+					RFN = data.replace(/(.{4})/g, '$&-').slice(0, -3);
 				})
 				.catch((error) => {
 					alert(error.message);
 				});
 		}
+		disabled = false;
+		loading = false;
+		buttonText = 'get RFN';
 	}
 	console.log(RFN);
 </script>
