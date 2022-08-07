@@ -30,9 +30,12 @@
 				.then(function (data) {
 					return data.replace(/(.{4})/g, '$&-').slice(0, -3);
 				})
-				.catch((e) => {
-					return e.message;
+				.catch((error) => {
+					return error.message;
 				});
+			disabled = false;
+			loading = false;
+			buttonText = 'get RFN';
 		}
 	}
 

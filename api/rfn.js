@@ -14,8 +14,8 @@ export default async function buildSurveyURL(data) {
         console.log("CURRENT RFN IS: ", currentRFN);
 
         // lazy check to make sure RFN has correct amount of numbers
-        if (currentRFN.length !== 20) {
-            throw Error("invalid length", "expected RFN length 20, got: ", currentRFN.length)
+        if (currentRFN.length !== 22) {
+            throw Error("invalid length", "expected input length 22, got: ", currentRFN.length)
         }
 
         const response = await fetch(fullURL);
