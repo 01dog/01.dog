@@ -34,12 +34,19 @@
 			buildSurveyURL(data)
 				.then(function (data) {
 					RFN = data.replace(/(.{4})/g, '$&-').slice(0, -3);
+					resetButtons(); // cant be the right way to do this lol
 				})
 				.catch((error) => {
 					alert(error.message);
+					resetButtons();
 				});
-			console.log('after promise');
 		}
+	}
+
+	function resetButtons() {
+		disabled = false;
+		loading = false;
+		buttonText = 'get RFN';
 	}
 </script>
 
