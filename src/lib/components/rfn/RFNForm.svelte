@@ -40,11 +40,10 @@
 					alert(error.message);
 				});
 		}
-		disabled = false;
-		loading = false;
-		buttonText = 'get RFN';
 	}
-	console.log(RFN);
+	disabled = false;
+	loading = false;
+	buttonText = 'get RFN';
 </script>
 
 <h2 class="text-2xl font-bold mt-4">transaction info</h2>
@@ -77,7 +76,8 @@
 </form>
 
 {#if RFN.length !== 0}
-	<p>we have a valid rfn! {RFN}</p>
+	<p class="text-2xl mb-4">we have a valid rfn!</p>
+	<p class="text-3xl mb-4 text-primary">{RFN}</p>
 {:else}
-	<p>nothing yet</p>
+	<p class="text-2xl mb-4">nothing yet...</p>
 {/if}
