@@ -5,7 +5,7 @@
 		grab any receipt from a non-employee, take note of the last <b>4</b> digits in the survey password
 		at the bottom (known secret numbers are in the table below)
 	</li>
-	<li>go to next gen -> electronic journal -> POS, and find the relevant transaction</li>
+	<li>go to next gen -> electronic journal -> POS and find the transaction you need</li>
 	<li>
 		fill in the form with all the relevant information, including the secret number from the receipt
 	</li>

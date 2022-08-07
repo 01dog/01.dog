@@ -14,6 +14,7 @@
 		disabled = true;
 		loading = true;
 		buttonText = 'getting RFN...';
+		RFN = '';
 
 		const formData = new FormData(e.target);
 
