@@ -26,9 +26,13 @@
 
 		// if we didnt break out of the loop, build the survey URL
 		if (Object.keys(data).length !== 0) {
-			buildSurveyURL(data).then(function (data) {
-				return data.replace(/(.{4})/g, '$&-').slice(0, -3);
-			});
+			buildSurveyURL(data)
+				.then(function (data) {
+					return data.replace(/(.{4})/g, '$&-').slice(0, -3);
+				})
+				.catch((e) => {
+					return e.message;
+				});
 		}
 	}
 
