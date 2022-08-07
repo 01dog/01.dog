@@ -81,8 +81,8 @@
 </form>
 
 {#if RFN.length !== 0}
-	<p class="text-2xl mb-4">we have a valid rfn!</p>
-	<p class="text-3xl mb-4 text-primary">{RFN}</p>
+	<p class="text-2xl mb-2">we have a valid RFN!</p>
+	<p class="text-2xl mb-4 text-primary">{RFN}</p>
 {:else}
 	<p class="text-2xl mb-4">nothing yet...</p>
 {/if}

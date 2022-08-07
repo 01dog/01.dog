@@ -7,10 +7,11 @@ export default async function buildSurveyURL(data) {
     survey = data.storenum + data.termnum + data.transid;
     keyword = data.year + data.month + data.day + data.secret
     rfnLen = survey + keyword + '1'
-            // lazy check to make sure RFN has correct amount of numbers
-            if (rfnLen.length !== 22) {
-                throw Error("invalid input: expected input length 22, got: ", rfnLen.length)
-            }
+    
+    // lazy check to make sure RFN has correct amount of numbers
+    if (rfnLen.length !== 22) {
+        throw Error("invalid input: expected input length 22, got: ", rfnLen.length)
+    }
 
     for (let randomNum = 0; randomNum < 9; randomNum++) {
         let fullURL = baseURL + '?gateway=WalgreensQR&survey=' + survey + '&keyword=' + randomNum + keyword + "&timeofvisit=1200";
