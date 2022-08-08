@@ -7,7 +7,8 @@
 	</li>
 	<li>go to next gen -> electronic journal -> POS and find the transaction you need</li>
 	<li>
-		fill in the form with all the relevant information, including the secret number from the receipt
+		fill in the form with all the relevant information, make sure to include leading 0s where needed
+		(see about section) and the secret number from the receipt
 	</li>
 	<li>wait a few seconds for the valid RFN for the transaction</li>
 </ul>
