@@ -25,3 +25,7 @@ export const getAboutMe = gql`
         }
     }
 `
+
+export const getProjects = gql`
+
+`

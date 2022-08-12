@@ -4,6 +4,10 @@
 	import RFNInfo from '$lib/components/rfn/RFNInfo.svelte';
 </script>
 
+<svelte:head>
+	<title>1dog - RFN finder</title>
+</svelte:head>
+
 <div class="mb-4 text-center font-bold">
 	<h1 class="text-5xl">walgreens RFN finder</h1>
 	<h5 class="text-m italic">no receipt? no problem!</h5>

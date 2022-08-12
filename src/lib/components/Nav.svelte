@@ -6,6 +6,7 @@
 		<div class="text-base-content items-stretch hidden lg:flex">
 			<a href="/" class="btn btn-ghost btn-sm rounded-btn">home</a>
 			<a href="/blog" class="btn btn-ghost btn-sm rounded-btn">blog</a>
+			<a href="/projects" class="btn btn-ghost btn-sm rounded-btn">projects</a>
 		</div>
 	</div>
 </div>

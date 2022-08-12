@@ -21,7 +21,7 @@
 </script>
 
 <svelte:head>
-	<title>1dog</title>
+	<title>1dog - home</title>
 </svelte:head>
 
 <div>
