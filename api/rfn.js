@@ -2,7 +2,7 @@ import fetch from 'isomorphic-fetch';
 
 export default async function buildSurveyURL(data) {
     let survey, keyword, rfnLen;
-    let baseURL = "https://shielded-beach-28637.herokuapp.com/https://feedback.inmoment.com/websurvey/2/begin";
+    let baseURL = "https://cors-anywhere-proxy.fly.dev/https://feedback.inmoment.com/websurvey/2/begin";
     
     survey = data.storenum + data.termnum + data.transid;
     keyword = data.year + data.month + data.day + data.secret
