@@ -27,5 +27,16 @@ export const getAboutMe = gql`
 `
 
 export const getProjects = gql`
-
+    query getProjects {
+        projects {
+            id
+            slug
+            title
+            about
+            image {
+                id
+                url
+            }
+        }
+    }
 `

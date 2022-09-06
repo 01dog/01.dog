@@ -15,7 +15,6 @@
 	};
 </script>
 
-<!--this feels incorrect somehow-->
 <script>
 	export let author;
 </script>

@@ -1,11 +1,20 @@
-<div class="card w-96 bg-base-100 shadow-xl">
-	<figure><img src="https://placeimg.com/400/225/arch" alt="placeholder" /></figure>
+<script context="module">
+	import { marked } from 'marked';
+</script>
+
+<script>
+	export let project;
+	let { title, about, image } = project;
+</script>
+
+<div class="card w-96 bg-base-100 shadow-xl hover:shadow-2xl">
+	<figure><img src={image.url} alt="placeholder" /></figure>
 	<div class="card-body">
 		<h2 class="card-title">
-			title
+			{title}
 			<div class="badge badge-secondary">NEW</div>
 		</h2>
-		<p>about project goes here</p>
+		<p>{@html marked(about)}</p>
 		<div class="card-actions justify-end">
 			<div class="badge badge-outline">badge1</div>
 			<div class="badge badge-outline">badge2</div>
