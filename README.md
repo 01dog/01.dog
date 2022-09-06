@@ -1,7 +1,14 @@
 # my site
 built with:
-- svelte
+- svelte  
+  
+styled with:
 - tailwindcss
-  - & daisyui
-- graphcms
+- daisyui
+
+content:
+- graphcms/hygraph
+
+hosts:
 - vercel
+- fly.io ([CORS anywhere proxy](https://github.com/Rob--W/cors-anywhere/))
