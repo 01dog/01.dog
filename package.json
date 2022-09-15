@@ -1,11 +1,11 @@
 {
 	"name": "01dog",
-	"version": "2.0.0",
+	"version": "3.0.0",
 	"scripts": {
 		"dev": "vite dev",
-		"build": "svelte-kit build",
-		"package": "svelte-kit package",
-		"preview": "svelte-kit preview",
+		"build": "vite build",
+		"package": "vite package",
+		"preview": "vite preview",
 		"lint": "prettier --check --plugin-search-dir=. . && eslint .",
 		"format": "prettier --write --plugin-search-dir=. ."
 	},
