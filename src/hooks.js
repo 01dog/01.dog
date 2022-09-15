@@ -24,5 +24,5 @@ export async function handle({ event, resolve }) {
     }
     
     // TODO: find a way to do this without disabling ssr?
-    return resolve(event, {ssr: false});
+    return resolve(event, {prerender: false});
 }
