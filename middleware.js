@@ -1,5 +1,4 @@
 // vercel middleware
-import { RFN_LOGIN } from "$env/static/private"
 import { next } from '@vercel/edge';
 
 
@@ -11,7 +10,7 @@ export const config = {
 export default function middleware(request) {
     const auth = request.headers.get("Authorization")
 
-    if (auth !== `Basic ${btoa(RFN_LOGIN)}`) {
+    if (auth !== `Basic ${btoa(process.env.RFN_LOGIN)}`) {
         return new Response("Not authorized", {
             status: 401,
             headers: {
