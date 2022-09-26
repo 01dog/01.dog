@@ -30,9 +30,10 @@ export const getProjects = gql`
     query getProjects {
         projects {
             id
-            slug
             title
             about
+            url
+            badges
             image {
                 id
                 url
