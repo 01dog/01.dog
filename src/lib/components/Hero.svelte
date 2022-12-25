@@ -3,8 +3,8 @@
 </script>
 
 <script>
-	export let author;
-	let { name, title, picture, biography } = author;
+	export let data;
+	let { name, title, picture, biography } = data;
 </script>
 
 <div class="hero min-h-200 bg-base-200">

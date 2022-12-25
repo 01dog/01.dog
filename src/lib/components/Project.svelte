@@ -1,13 +1,11 @@
-<script context="module">
-	import { marked } from 'marked';
-</script>
-
 <script>
+	import { marked } from 'marked';
 	import Link from '$lib/components/Link.svelte';
 
-	export let project;
+	export let projectsData;
+	console.log('IN PROJECTS COMP: ', projectsData);
 	let badgeArr;
-	let { title, about, image, url, badges } = project;
+	let { title, about, image, url, badges } = projectsData;
 
 	if (badges !== null) {
 		badgeArr = badges.split(',');

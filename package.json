@@ -1,6 +1,6 @@
 {
 	"name": "01dog",
-	"version": "3.0.0",
+	"version": "4.0.0",
 	"scripts": {
 		"dev": "vite dev",
 		"build": "vite build",
@@ -10,9 +10,9 @@
 		"format": "prettier --write --plugin-search-dir=. ."
 	},
 	"devDependencies": {
-		"@sveltejs/adapter-auto": "next",
+		"@sveltejs/adapter-auto": "1.0.0",
 		"@sveltejs/adapter-vercel": "^1.0.0-next.57",
-		"@sveltejs/kit": "next",
+		"@sveltejs/kit": "1.0.1",
 		"@tailwindcss/typography": "^0.5.2",
 		"autoprefixer": "^10.4.4",
 		"daisyui": "^2.15.0",
@@ -20,24 +20,24 @@
 		"eslint-config-prettier": "^8.3.0",
 		"eslint-plugin-svelte3": "^4.0.0",
 		"graphql": "^16.5.0",
-		"graphql-request": "^4.2.0",
+		"graphql-request": "^5.1.0",
 		"marked": "^4.0.16",
 		"mdsvex": "^0.10.5",
 		"p-retry": "^5.1.1",
 		"postcss": "^8.4.12",
-		"postcss-load-config": "^3.1.4",
+		"postcss-load-config": "^4.0.1",
 		"prettier": "^2.5.1",
 		"prettier-plugin-svelte": "^2.5.0",
-		"svelte": "^3.44.0",
+		"svelte": "^3.55.0",
 		"svelte-copy-to-clipboard": "^0.2.5",
-		"svelte-preprocess": "^4.10.5",
+		"svelte-preprocess": "^5.0.0",
 		"tailwindcss": "^3.0.23",
-		"vite": "^3.0.4"
+		"vite": "^4.0.0"
 	},
 	"type": "module",
 	"dependencies": {
-		"@vercel/edge": "^0.0.4",
+		"@vercel/edge": "^0.2.1",
 		"isomorphic-fetch": "^3.0.0",
-		"vercel": "^27.3.6"
+		"vercel": "^28.10.1"
 	}
 }
