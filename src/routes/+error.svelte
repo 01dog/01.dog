@@ -1,17 +1,5 @@
-<script context="module">
-    export function load({error, status}) {
-        return {
-            props: {error, status},
-        }
-    }
-</script>
-
 <script>
-    export let error, status
+	import { page } from '$app/stores';
 </script>
 
-<svelte:head>
-    <title>{status}</title>
-</svelte:head>
-
-<h1>{status}: {error.message}</h1>
+<h1>{$page.status}: {$page.error.message}</h1>
