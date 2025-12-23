@@ -23,6 +23,7 @@
 
 	/** @type {Props} */
 	let { data } = $props();
+	// console.log(data)
 </script>
 
 <svelte:head>

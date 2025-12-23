@@ -4,7 +4,7 @@
 
 <script>
 	let { data } = $props();
-	let { name, title, picture, biography } = data;
+	let { name, title, picture, biography } = $derived(data);
 </script>
 
 <div class="hero min-h-200 bg-base-200">
