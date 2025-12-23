@@ -1,4 +1,4 @@
-<footer class="footer p-2 bg-neutral text-neutral-content fixed bottom-0">
+<footer class="footer-horizontal p-2 bg-neutral text-neutral-content fixed bottom-0 rounded-r">
 	<div>
 		<p>
 			built with <a

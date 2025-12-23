@@ -9,6 +9,6 @@
 	let { href = '', children } = $props();
 </script>
 
-<a role="button" class="btn gap-2" {href} target="noopener">
+<a role="button" class="btn btn-neutral gap-2" {href} target="noopener">
 	{@render children?.()}
 </a>
