@@ -3,17 +3,13 @@
 	import Link from '$lib/components/Link.svelte';
 
 	let { projectsData } = $props();
-	let badgeArr = $state();
 	let { title, about, image, url} = $derived(projectsData);
-	// this might not be the proper way to do it but it fixes state_referenced_locally errors
-	let badges = $derived.by(() => {
+	let badgeArr = $derived.by(() => {
 		let badges = projectsData.badges;
 		if (badges !== null) {
-				badgeArr = badges.split(',');
-	}
+				return badges.split(',');
+		}
 	})
-
-	
 </script>
 
 <div class="card w-96 bg-base-100 shadow-xl hover:shadow-2xl">
