@@ -1,5 +1,8 @@
 /* Write your global styles here, in PostCSS syntax */
 @import 'tailwindcss';
+@plugin "daisyui" {
+  themes: forest;
+}
 
 /*
   The default border color has changed to `currentcolor` in Tailwind CSS v4,
