@@ -17,16 +17,16 @@
 		"@tailwindcss/typography": "^0.5.19",
 		"autoprefixer": "^10.4.23",
 		"daisyui": "^5.5.14",
-		"eslint": "^8.57.1",
-		"eslint-config-prettier": "^8.10.2",
+		"eslint": "^9.39.2",
+		"eslint-config-prettier": "^10.1.8",
 		"eslint-plugin-svelte3": "^4.0.0",
 		"graphql": "^16.12.0",
-		"graphql-request": "^5.2.0",
-		"marked": "^4.3.0",
+		"graphql-request": "^7.4.0",
+		"marked": "^17.0.1",
 		"mdsvex": "^0.12.6",
-		"p-retry": "^5.1.2",
+		"p-retry": "^7.1.1",
 		"postcss": "^8.5.6",
-		"postcss-load-config": "^4.0.2",
+		"postcss-load-config": "^6.0.1",
 		"prettier": "^3.7.4",
 		"prettier-plugin-svelte": "^3.4.1",
 		"svelte": "^5.46.0",
@@ -38,8 +38,8 @@
 	"type": "module",
 	"dependencies": {
 		"@tailwindcss/postcss": "^4.1.18",
-		"@vercel/edge": "^0.2.7",
+		"@vercel/edge": "^1.2.2",
 		"isomorphic-fetch": "^3.0.0",
-		"vercel": "^28.20.0"
+		"vercel": "^50.1.3"
 	}
 }
