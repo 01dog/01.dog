@@ -1,5 +1,6 @@
 {
 	"name": "01dog",
+	"packageManager": "pnpm@10.26.1",
 	"version": "4.0.0",
 	"scripts": {
 		"dev": "vite dev",
