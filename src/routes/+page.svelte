@@ -1,4 +1,4 @@
-<script context="module">
+<script module>
 	import Hero from '$lib/components/Hero.svelte';
 	import Socials from '$lib/components/Socials.svelte';
 
@@ -12,11 +12,17 @@
 	// 			author
 	// 		}
 	// 	};
-	// };
+	
 </script>
 
 <script>
-	export let data;
+	/**
+	 * @typedef {Object} Props
+	 * @property {any} data - };
+	 */
+
+	/** @type {Props} */
+	let { data } = $props();
 </script>
 
 <svelte:head>

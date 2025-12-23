@@ -1,9 +1,9 @@
-<script context="module">
+<script module>
 	import { marked } from 'marked';
 </script>
 
 <script>
-	export let data;
+	let { data } = $props();
 	let { name, title, picture, biography } = data;
 </script>
 

@@ -2,9 +2,9 @@
 	import { marked } from 'marked';
 	import Link from '$lib/components/Link.svelte';
 
-	export let projectsData;
+	let { projectsData } = $props();
 	console.log('IN PROJECTS COMP: ', projectsData);
-	let badgeArr;
+	let badgeArr = $state();
 	let { title, about, image, url, badges } = projectsData;
 
 	if (badges !== null) {
