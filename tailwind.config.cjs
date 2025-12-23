@@ -6,12 +6,8 @@ const config = {
 	},
 
 	plugins: [
-		require('daisyui'),
 		require('@tailwindcss/typography')
 	],
-	daisyui: {
-		darkTheme: "forest"
-	}
 };
 
 module.exports = config;
