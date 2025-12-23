@@ -8,7 +8,7 @@ const config = {
 	extensions: ['.svelte', ...mdsvexConfig.extensions],
 	kit: {
 		adapter: vercel({
-			edge: false,
+			runtine: 'edge',
 			split: false
 		})
 	},
