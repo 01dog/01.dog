@@ -7,7 +7,7 @@
 	let { name, title, picture, biography } = $derived(data);
 </script>
 
-<div class="hero min-h-200 bg-base-200">
+<div class="hero min-h-200 bg-base-200 rounded-lg">
 	<div class="hero-content flex-col lg:flex-row">
 		<img
 			src={picture.url}
@@ -16,7 +16,7 @@
 		/>
 		<div>
 			<h1 class="text-5xl font-bold">hi, i'm <span class="text-secondary">{name}</span></h1>
-			<h3 class="text-2xl font-bold">{title}</h3>
+			<h3 class="text-2xl font-bold mt-2">{title}</h3>
 			<p class="py-6 text-lg">{@html marked(biography)}</p>
 		</div>
 	</div>
