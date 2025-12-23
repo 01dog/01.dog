@@ -1,4 +1,4 @@
-<script context="module">
+<script module>
 	import Divider from '$lib/components/Divider.svelte';
 	import RFNForm from '$lib/components/rfn/RFNForm.svelte';
 	import RFNInfo from '$lib/components/rfn/RFNInfo.svelte';
@@ -15,6 +15,10 @@
 </div>
 
 <Divider>
-	<RFNForm slot="form" />
-	<RFNInfo slot="info" />
+	{#snippet form()}
+		<RFNForm  />
+	{/snippet}
+	{#snippet info()}
+		<RFNInfo  />
+	{/snippet}
 </Divider>

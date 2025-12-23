@@ -1,7 +1,7 @@
 <script>
 	import Project from '$lib/components/Project.svelte';
 
-	export let data;
+	let { data } = $props();
 </script>
 
 <svelte:head>

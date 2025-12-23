@@ -1,13 +1,15 @@
-<script context="module">
+<script module>
 	import RFNTextInput from './RFNTextInput.svelte';
 	import buildSurveyURL from '$api/rfn.js';
 </script>
 
 <script>
-	let disabled = false;
-	let loading = false;
-	let buttonText = 'get RFN';
-	let RFN = '';
+	import { preventDefault } from 'svelte/legacy';
+
+	let disabled = $state(false);
+	let loading = $state(false);
+	let buttonText = $state('get RFN');
+	let RFN = $state('');
 
 	// there is definitely a smarter way to do this using svelte's await blocks, but i just dont know how to yet
 	function getRFN(e) {
@@ -53,7 +55,7 @@
 
 <h2 class="text-2xl font-bold mt-4">transaction info</h2>
 
-<form class="form-control" on:submit|preventDefault={getRFN}>
+<form class="form-control" onsubmit={preventDefault(getRFN)}>
 	<div class="grid grid-cols-3 p-4 gap-4">
 		<div>
 			<RFNTextInput placeholder="store number" id="storenum" name="storenum" />

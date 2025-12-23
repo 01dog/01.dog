@@ -1,4 +1,4 @@
-<script context="module">
+<script module>
     import { gql, GraphQLClient } from 'graphql-request'
 
     export const load = async ({ params }) => {
@@ -37,7 +37,7 @@
 </script>
 
 <script>
-    export let post
+    let { post } = $props();
 </script>
 
 <svelte:head>

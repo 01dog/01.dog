@@ -2,14 +2,14 @@
 	import { marked } from 'marked';
 	import Link from '$lib/components/Link.svelte';
 
-	export let projectsData;
-	console.log('IN PROJECTS COMP: ', projectsData);
-	let badgeArr;
-	let { title, about, image, url, badges } = projectsData;
-
-	if (badges !== null) {
-		badgeArr = badges.split(',');
-	}
+	let { projectsData } = $props();
+	let { title, about, image, url} = $derived(projectsData);
+	let badgeArr = $derived.by(() => {
+		let badges = projectsData.badges;
+		if (badges !== null) {
+				return badges.split(',');
+		}
+	})
 </script>
 
 <div class="card w-96 bg-base-100 shadow-xl hover:shadow-2xl">
@@ -23,7 +23,7 @@
 			<Link href={url}>{url}</Link>
 		{/if}
 
-		{#if badges}
+		{#if badgeArr}
 			<div class="mt-2 card-actions justify-end">
 				{#each badgeArr as badge}
 					<div class="badge badge-outline">{badge}</div>

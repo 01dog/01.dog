@@ -9,7 +9,7 @@
 	<table class="table table-zebra w-full text-center">
 		<thead>
 			<tr>
-				<th />
+				<th></th>
 				<th>what it is</th>
 				<th>where to buy it</th>
 				<th>how much</th>
@@ -132,7 +132,7 @@
 	<table class="table table-zebra w-full text-center">
 		<thead>
 			<tr>
-				<th />
+				<th></th>
 				<th>what it is</th>
 				<th>where to buy it</th>
 				<th>how much</th>

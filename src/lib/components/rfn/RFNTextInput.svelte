@@ -1,7 +1,5 @@
 <script>
-	export let placeholder;
-	export let id;
-	export let name;
+	let { placeholder, id, name } = $props();
 </script>
 
 <input
